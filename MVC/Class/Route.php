@@ -137,13 +137,22 @@ class Route{
 		
 		echo $this->req_page;
 	}
+	/*
+	* @name changeDisplay
+	* @param <boolean> state
+	* @brief change the display state of a page
+	*/
 	
 	protected function changeDisplay($state = true):void
 	{
 		$this->display = $state;
 	}
-	
-	protected function getDisplay():boolean
+/*
+*	@name getDisplay
+*	@brief get the curent display state
+*	@return <boolean> status
+*/	
+	protected function getDisplay():bool
 	{
 		return $this->display;
 	}
